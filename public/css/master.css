@@ -1,0 +1,13 @@
+html{
+  font-family:helvetica;
+  background-color: lightblue;
+}
+p {
+  text-align: center;
+}
+.hidden{
+  display:none;
+}
+#errorMessage{
+  color:red;
+}
