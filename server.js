@@ -19,7 +19,6 @@ app.get(`/movieInfo`,(req,res)=>{
   const apiKey = process.env.API_KEY;
   axios.get(`https://omdbapi.com/?apikey=${apiKey}&t=${title}`)
   .then((response)=>{
-    // console.log(response);
     const Writer = response.data.Writer;
     const poster = response.data.Poster;
     const DVD = response.data.DVD;
