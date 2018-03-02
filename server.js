@@ -16,7 +16,7 @@ app.get(`/`,(req,res)=>{
 app.get(`/movieInfo`,(req,res)=>{
   const title = req.query.title;
   const api_id="tt3896198";
-  const apiKey = "2e4ddc07";
+  const apiKey = process.env.API_KEY;
   axios.get(`https://omdbapi.com/?apikey=${apiKey}&t=${title}`)
   .then((response)=>{
     // console.log(response);
